@@ -1,0 +1,18 @@
+<html lang="fr">
+        <head><title>Merchex - Meilleurs chanteurs</title></head>
+        <body>
+            <h1>Liste des meilleurs artistes musicaux</h1>
+            
+            <p>Mes chanteurs préférés sont :</p>
+            {% for artiste in artists%}
+            <li>{{artiste.name}}</li>
+            {% endfor %}
+            
+            <p>Mes groupes préférés sont :</p>
+            {% for band in bands%}
+            <li>{{band.name}}</li>
+            {% endfor %}
+
+            
+        </body>
+</html>
