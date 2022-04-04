@@ -1,0 +1,48 @@
+asgiref @ file:///C:/Temp/Python_Packages/asgiref-3.4.1-py3-none-any.whl
+bcrypt @ file:///C:/Temp/Python_Packages/bcrypt-3.2.0-cp36-abi3-win_amd64.whl
+certifi==2021.10.8
+cffi @ file:///C:/Temp/Python_Packages/cffi-1.15.0-cp310-cp310-win_amd64.whl
+charset-normalizer==2.0.10
+cryptography==36.0.1
+Deprecated @ file:///C:/Temp/Python_Packages/Deprecated-1.2.13-py2.py3-none-any.whl
+dict2xml==1.7.0
+Django==4.0.1
+django-mssql @ file:///C:/Temp/Python_Packages/django_mssql-1.8-py2.py3-none-any.whl
+django-mssql-backend @ file:///C:/Temp/Python_Packages/django_mssql_backend-2.8.1-py3-none-any.whl
+django-redis @ file:///C:/Temp/Python_Packages/django_redis-5.2.0-py3-none-any.whl
+et-xmlfile @ file:///C:/Temp/Python_Packages/et_xmlfile-1.1.0-py3-none-any.whl
+ghostscript @ file:///C:/Temp/Python_Packages/ghostscript-0.7-py2.py3-none-any.whl
+idna==3.3
+mod-wsgi @ file:///C:/Temp/Python_Packages/mod_wsgi-4.9.0-cp310-cp310-win_amd64.whl
+mssql-django @ file:///C:/Temp/Python_Packages/mssql_django-1.1.1-py3-none-any.whl
+numpy==1.22.1
+openpyxl @ file:///C:/Temp/Python_Packages/openpyxl-3.0.9-py2.py3-none-any.whl
+packaging @ file:///C:/Temp/Python_Packages/packaging-21.3-py3-none-any.whl
+pandas==1.4.0
+Pillow==9.0.1
+psutil @ file:///C:/Temp/Python_Packages/psutil-5.9.0-cp310-cp310-win_amd64.whl
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser @ file:///C:/Temp/Python_Packages/pycparser-2.21-py2.py3-none-any.whl
+pyodbc==4.0.32
+pyparsing @ file:///C:/Temp/Python_Packages/pyparsing-3.0.6-py3-none-any.whl
+python-dateutil @ file:///C:/Temp/Python_Packages/python_dateutil-2.8.2-py2.py3-none-any.whl
+python-ldap @ file:///C:/Temp/Python_Packages/python_ldap-3.4.0-cp310-cp310-win_amd64.whl
+python3-ldap==0.9.8.4
+pytz @ file:///C:/Temp/Python_Packages/pytz-2021.3-py2.py3-none-any.whl
+pywin32 @ file:///C:/Temp/Python_Packages/pywin32-303-cp310-cp310-win_amd64.whl
+redis @ file:///C:/Temp/Python_Packages/redis-4.1.0-py3-none-any.whl
+reportlab==3.6.6
+requests @ file:///C:/Temp/Python_Packages/requests-2.27.0-py2.py3-none-any.whl
+semantic-version @ file:///C:/Temp/Python_Packages/semantic_version-2.8.5-py2.py3-none-any.whl
+setuptools-rust @ file:///C:/Temp/Python_Packages/setuptools_rust-1.1.2-py3-none-any.whl
+six @ file:///C:/Temp/Python_Packages/six-1.16.0-py2.py3-none-any.whl
+sqlparse @ file:///C:/Temp/Python_Packages/sqlparse-0.4.2-py3-none-any.whl
+treepoem==3.14.0
+typing_extensions @ file:///C:/Temp/Python_Packages/typing_extensions-4.0.1-py3-none-any.whl
+tzdata @ file:///C:/Temp/Python_Packages/tzdata-2021.5-py2.py3-none-any.whl
+urllib3==1.26.7
+wrapt @ file:///C:/Temp/Python_Packages/wrapt-1.13.3-cp310-cp310-win_amd64.whl
+xlrd @ file:///C:/Temp/Python_Packages/xlrd-2.0.1-py2.py3-none-any.whl
+XlsxWriter==3.0.2
+xmltodict==0.12.0
