@@ -1,0 +1,17 @@
+{% extends 'listings/base.html' %}
+{% block content %}
+
+<h1>Liste des annonces disponibles : ({{listings|length}})</h1>
+            
+{% for annonce in listings %}
+    <li>{{annonce.name}} | Disponibilité : 
+        {% if annonce.sold == 0 %}Disponible{% else %}Indisponible{% endif %}</li>
+{% endfor %}
+
+<br/><br/><br/>
+<button onclick="location.href='/admin'" id="button1">Page administrateur</button>
+<button onclick="location.href='/artist_list'" id="button2">Page Artistes</button>
+<button onclick="location.href='/band_list'" id="button3">Page Groupes</button>
+
+
+{% endblock %}

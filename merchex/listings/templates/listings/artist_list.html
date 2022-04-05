@@ -1,0 +1,19 @@
+{% extends 'listings/base.html' %}
+{% block content %}
+
+<h1>Liste des groupes de musique enregistrés dans la base : ({{artists|length}})</h1>
+
+{% for artiste in artists%}
+    <a>
+        {{artiste.name}}
+        <button onclick="location.href='/artist_list/{{artiste.pk}}'" id="button">Voir les détails de l'artiste</button>
+    <a>
+    <br/><br/>
+{% endfor %}
+
+<br/><br/><br/>
+<button onclick="location.href='/admin'" id="button1">Page administrateur</button>
+<button onclick="location.href='/listings'" id="button2">Page Annonces</button>
+<button onclick="location.href='/band_list'" id="button3">Page Groupes</button>
+
+{% endblock %}

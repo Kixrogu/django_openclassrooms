@@ -1,0 +1,22 @@
+{% extends 'listings/base.html' %}
+{% block content %}
+
+<h1>Détails du groupe de musique {{band.name}}</h1>
+
+<ul>
+ <li>Genre : {{ band.genre }}</li>
+ <li>Année de formation : {{ band.year_formed }}</li>
+ <li>Actif : {{ band.active }}</li>
+ <li>{{ band.official_homepage }}</li>
+</ul>
+
+<p>{{ band.biography }}</p>
+
+<br/><br/><br/>
+<button onclick="location.href='/band_list'" id="button1">Retour à la page précédente</button>
+<br/>
+<button onclick="location.href='/admin'" id="button1">Page administrateur</button>
+<button onclick="location.href='/artist_list'" id="button2">Page Artistes</button>
+<button onclick="location.href='/listings'" id="button3">Page Annonces</button>
+
+{% endblock %}
