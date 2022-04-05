@@ -1,8 +1,12 @@
+from wsgiref.util import request_uri
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from listings.models import Band
 from listings.models import Artist
 from listings.models import Listings
+from listings.form import ContactUsForm
+from django.core.mail import send_mail
+
 
 def listings(request):
     listings = Listings.objects.all()
@@ -39,8 +43,32 @@ def artist_info(request, artist_id):
     )
 
 
-def aboutus(request):
-    return HttpResponse('<h1>A propos de nous</h1><p1>Franchement ça marche bien</p1>')
 
 def contactus(request):
-    return HttpResponse('<p1>Mail : maxime.pile@alur3.com</p1><p1>Tel : +33 29 82 54 23</p1>')
+    #print('La méthode de requête est : ', request.method)
+    #print('Les données de la requête sont : ', request.POST)
+
+    if request.method == 'POST':
+        form = ContactUsForm(request.POST)
+
+
+        if form.is_valid():
+            send_mail(
+                subject=f'Message de {form.cleaned_data["name"] or "anonyme"} via Merchex - Contact us',
+                message=form.cleaned_data['message'],
+                from_email=form.cleaned_data['email'],
+                recipient_list=['admin@merchex.xyz'],
+            )
+            return redirect('email-sent')
+
+
+    else:
+        form = ContactUsForm() 
+
+    return render(request,
+        'listings/contactus.html',
+        {'form': form})
+
+
+def email_sent(request):
+    return render(request, 'listings/email-sent.html')

@@ -6,7 +6,14 @@
         <link rel="stylesheet" href="{% static 'listings/styles.css' %}"/>
     </head>
     <body>
-
+        <button onclick="location.href='/admin'" id="button1">Page administrateur</button>
+        <button onclick="location.href='/artist_list'" id="button2">Page Artistes</button>
+        <button onclick="location.href='/band_list/'" id="button3">Page Groupes</button>
+        <button onclick="location.href='/listings'" id="button4">Page Annonces</button>
+        <!--<button onclick="location.href='/about-us/'" id="button5">A propos de nous</button>-->
+        <button onclick="location.href='/contact-us'" id="button6">Nous contacter</button>
+        <br/><br/><br/>
+        
         {% block content %}{% endblock %}
 
     </body>
