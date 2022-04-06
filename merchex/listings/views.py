@@ -7,6 +7,8 @@ from listings.models import Listings
 from listings.form import ContactUsForm
 from django.core.mail import send_mail
 
+from listings.form import *
+
 
 def listings(request):
     listings = Listings.objects.all()
@@ -72,3 +74,51 @@ def contactus(request):
 
 def email_sent(request):
     return render(request, 'listings/email-sent.html')
+
+
+
+def band_add(request):
+    
+    if request.method == 'POST':
+        form = BandAdd(request.POST)
+
+
+        if form.is_valid():
+            band = form.save()
+            return redirect('redirect_bands')
+    
+    
+    else:
+        form = BandAdd()
+
+    return render(request,
+        'listings/band-add.html',
+        {'form': form})
+
+
+def redirect_bands(request):
+    return render(request, 'listings/band-add-complete.html')
+
+
+
+def artist_add(request):
+    
+    if request.method == 'POST':
+        form = ArtistAdd(request.POST)
+
+
+        if form.is_valid():
+            artist = form.save()
+            return redirect('redirect_artists')
+    
+    
+    else:
+        form = ArtistAdd()
+
+    return render(request,
+        'listings/artist-add.html',
+        {'form': form})
+
+
+def redirect_artists(request):
+    return render(request, 'listings/artist-add-complete.html')

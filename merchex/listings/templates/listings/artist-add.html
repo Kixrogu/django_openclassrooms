@@ -1,0 +1,15 @@
+{% extends 'listings/base.html' %}
+{% block content %}
+
+<h1>Ajoutez un artiste musical :</h1>
+
+<form action ="" method="post" novalidate>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Ajouter">
+</form>
+
+
+
+
+{% endblock%}

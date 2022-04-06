@@ -19,11 +19,16 @@ from listings import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.band_list),
     path('listings/', views.listings),
     path('band_list/', views.band_list),
     path('band_list/<int:band_id>/', views.band_info),
+    path('band_list/band-add/', views.band_add),
+    path('band_list/band-add-complete', views.redirect_bands, name='redirect_bands'),
     path('artist_list/', views.artist_list),
     path('artist_list/<int:artist_id>/', views.artist_info),
+    path('artist_list/artist-add/', views.artist_add),
+    path('artist_list/artist-add-complete', views.redirect_artists, name='redirect_artists'),
     path('listings/', views.listings),
     path('contact-us/', views.contactus, name="contactus"),
     path('email-sent/', views.email_sent, name="email-sent"),
